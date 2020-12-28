@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+  username: postgres
+  password: 12345
+
+development:
+  <<: *default
+  database: boiler_plate_dev
+
+test:
+  <<: *default
+  database: boiler_plate_test
+
+production:
+  <<: *default
+  database: boiler_plate_pro
