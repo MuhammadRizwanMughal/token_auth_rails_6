@@ -8,12 +8,12 @@ default: &default
 
 development:
   <<: *default
-  database: boiler_plate_dev
+  database: q_dev
 
 test:
   <<: *default
-  database: boiler_plate_test
+  database: q_test
 
 production:
   <<: *default
-  database: boiler_plate_pro
+  database: q_pro
